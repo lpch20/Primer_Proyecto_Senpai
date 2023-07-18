@@ -1,0 +1,51 @@
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+}
+
+footer{
+    color: white;
+    background-color: #2a3342;
+}
+
+footer .nav-link{
+    color: white;
+}
+
+.bg-body-tertiary{
+    --bs-bg-opacity: 0;
+}
+
+.btnNav{
+    width: 100px;
+}
+
+.card{
+    --bs-card-border-color: none;
+}
+
+.greenButton{
+    background-color: #2ad167;
+    color: white;
+}
+
+
+.navbar-brand{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: x-large;
+}
+
+#pNew{
+    color: white;
+    background-color: #2ad167;
+    width: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+    
