@@ -1,128 +1,340 @@
-h1{
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 900;
+h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
 }
 
-h5{
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 600;
+body {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-footer{
-    color: white;
-    background-color: #2a3342;
+h5 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
 }
 
-footer .nav-link{
-    color: white;
+footer {
+  color: white;
+  background-color: #2a3342;
 }
 
-.bg-body-tertiary{
-    --bs-bg-opacity: 0;
+.my-4{
+  margin-bottom: 0rem;
 }
 
-.btnNav{
-    width: 100px;
+footer p {
+  color: #93a1b6;
 }
 
-.card{
-    --bs-card-border-color: none;
+footer .nav-link {
+  color: #93a1b6;
 }
 
-.greenButton{
-    background-color: #2ad167;
-    color: white;
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
 }
 
-.bi-check{
-    background-color: #2ad167;
-    border: solid 1px #22aa56;
-    border-radius: 100%;
-    color: white;
+.btnNav {
+  width: 100px;
 }
 
-.navbar-brand{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: x-large;
+.card {
+  --bs-card-border-color: none;
 }
 
-.icons{
- background-color: #2ad167;
- display: flex;
- width: 50px;
- height: 50px;
- align-items: center;
- justify-content: center;
- border-radius: 5px;
+.greenButton {
+  background-color: #2ad167;
+  color: white;
 }
 
+.bi-check {
+  background-color: #2ad167;
+  border: solid 1px #22aa56;
+  border-radius: 100%;
+  color: white;
+}
+
+.navbar-brand {
+  font-family: "Noto Sans", sans-serif;
+  font-size: x-large;
+}
+
+.icons {
+  background-color: #2ad167;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
 
 .cardIcon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.check{
+.check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.check li {
+  border: none;
+  background-color: transparent;
+}
+
+.badge {
+  background-color: #e9fff2;
+  color: #2ad167;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnDemo {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+}
+
+.cardBg {
+  background-color: #f7f8f9;
+  padding: 20px;
+}
+
+.cardBg h6 {
+  margin-top: 20px;
+}
+.price {
+  margin-top: 20px;
+}
+
+.card-info h6:nth-child(2) {
+  color: #2ad167;
+}
+
+.h6_1 {
+  color: #93a1b6;
+}
+
+#modalLogo {
+  background-color: #2ad167;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal {
+  --bs-modal-header-border-color: none;
+  --bs-modal-footer-border-color: none;
+  background-color: #2a3342;
+}
+
+.modal a {
+  color: #22aa56;
+}
+
+.modal a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.modal p {
+  color: white;
+}
+
+.modal h2 {
+  color: white;
+  margin-top: 20px;
+}
+
+.modal h6 {
+  color: #93a1b6;
+  margin-top: 20px;
+}
+
+.modal label {
+  color: white;
+}
+
+.modal div {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-footer button {
+  width: 100%;
+}
+
+.userSupport {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardsDesktop {
+  display: none;
+}
+
+.demosTitle {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#demos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#pNew {
+  color: white;
+  background-color: #2ad167;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
+}
+
+#h1Desktop {
+  display: none;
+}
+
+#circle {
+  display: none;
+}
+
+#dots {
+  display: none;
+}
+
+#demos {
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  main {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  #navId {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .firstSection {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .firstSection img {
+    width: 95%;
+  }
+
+  .btnDemo {
+    width: 35%;
+    height: 50px;
+  }
+
+  .ulItems {
+    margin-left: auto;
+  }
+
+  .firstSection img{
+    position: relative;
+  }
+
+  .imgIcons {
+    display: flex;
+    position: relative;
+  }
+
+  #h1Desktop {
+    display: flex;
+  }
+
+  #h1Mobile {
+    display: none;
+  }
+
+  #circle {
+    display: flex;
+    position: absolute;
+    left: -60px;
+    top: -60px
+  }
+
+  #dots {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    bottom: -30px
+  }
+
+  .cardsDesktop {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .demoCards {
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
-
-.check li{
-    border: none;
-    background-color: transparent;
-}
-
-.badge{
-    background-color: #c9f5d9;
-    color: #2ad167;
-}
-
-.card-info{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
+    margin-bottom: 80px;
+  }
 
-.price{
-    display: flex;
-}
+  .supportSeccion {
+    margin-top: 80px;
+  }
 
-.cardBg{
-    background-color: #f7f8f9;
-    padding: 20px;
-}
+  .demosTitle {
+    margin-bottom: 60px;
+  }
 
-.cardBg h6{
-    margin-top: 20px;
-}
-.price{
-    margin-top: 20px;
-}
+  .demosTitle h1 {
+    margin-bottom: 40px;
+  }
 
-
-
-#demos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  #demos {
+    display: none;
+  }
 }
-
-#pNew{
-    color: white;
-    background-color: #2ad167;
-    width: 60px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-#logo{
-    width: 30px;
-    height: 30px;
-    margin-right: 3px;
-}
-    
