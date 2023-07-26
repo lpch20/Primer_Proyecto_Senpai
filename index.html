@@ -47,13 +47,13 @@
           >
             <ul class="navbar-nav ulItems me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Producto</a>
+                <a class="nav-link" href="">Producto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Características</a>
+                <a class="nav-link" href="#secondection">Características</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Precios</a>
+                <a class="nav-link" href="#foot ">Precios</a>
               </li>
             </ul>
 
@@ -68,7 +68,17 @@
             >
               Ingresar
             </button>
-            <button class="btn btnNav greenButton" type="submit">
+
+            <button
+              style="border: none"
+              class="btn btn-outline-secondary btnNav greenButton"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2"
+              data-bs-whatever=""
+              type="submit"
+              type="submit"
+            >
               Registrarse
             </button>
 
@@ -99,19 +109,27 @@
                     <h6>y empieza a conseguir resultados</h6>
                   </div>
                   <div class="modal-body">
-                    <form>
+                    <form id="loginForm">
                       <div class="mb-3">
-                        <label for="email" class="col-form-label">Correo</label>
-                        <input type="email" class="form-control" id="email" />
+                        <label for="validationDefault01" class="form-label"
+                          >Correo</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="validationDefault01"
+                          required
+                        />
                       </div>
                       <div class="mb-3">
-                        <label for="password" class="col-form-label"
+                        <label for="validationDefault01" class="form-label"
                           >Contraseña</label
                         >
                         <input
                           type="password"
                           class="form-control"
-                          id="password"
+                          id="validationDefault02"
+                          required
                         />
                       </div>
                       <div class="userSupport">
@@ -122,17 +140,106 @@
                         </div>
                         <a href="">Olvidé mi contraseña</a>
                       </div>
+
+                      <div class="modal-footer">
+                        <button
+                          id="loginButton"
+                          type="submit"
+                          class="btn btnNav greenButton"
+                        >
+                          Ingresar
+                        </button>
+                        <p>Aun no tienes cuenta? <a href="">Registrarse</a></p>
+                      </div>
                     </form>
                   </div>
-                  <div class="modal-footer">
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal fade"
+              id="exampleModal2"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
                     <button
                       type="button"
-                      class="btn btnNav greenButton"
+                      class="btn-close"
                       data-bs-dismiss="modal"
-                    >
-                      Ingresar
-                    </button>
-                    <p>Aun no tienes cuenta? <a href="">Registrarse</a></p>
+                      aria-label="Close"
+                    ></button>
+                    <div id="modalLogo">
+                      <img
+                        style="width: 40px"
+                        src="assets/img/logo-blanco.png"
+                        alt=""
+                      />
+                    </div>
+                    <h2 id="exampleModalLabel">Registrarse</h2>
+                    <h6>Unete</h6>
+                  </div>
+                  <div class="modal-body">
+                    <form id="logonForm">
+                      <div class="mb-3">
+                        <label for="validationDefault01" class="form-label"
+                          >Nombre y Apellido</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nameAndSurname"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationDefault01" class="form-label"
+                          >Correo</label
+                        >
+                        <input type="email" class="form-control" required />
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationDefault01" class="form-label"
+                          >Fecha de Nacimiento</label
+                        >
+                        <input type="date" class="form-control" required />
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationDefault01" class="form-label"
+                          >Contraseña</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="passworLogOn"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationDefault01" class="form-label"
+                          >Repetir contraseña</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="repeatPassworLogOn"
+                          required
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          id="loginButton"
+                          type="submit"
+                          class="btn btnNav greenButton"
+                        >
+                          Registrarse
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -465,7 +572,14 @@
                   Solicitar Demo
                 </button>
                 <button
+                  style="border: none"
                   class="btn btnDemo btn-outline-secondary btnNav"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                  data-bs-whatever=""
+                  type="submit"
+                  class="btn btnNav greenButton"
                   type="submit"
                 >
                   Registrarse
@@ -474,7 +588,8 @@
             </div>
           </div>
         </section>
-        <section class="supportSeccion">
+
+        <section id="secondection" class="supportSeccion">
           <div class="card-group">
             <div class="card cardIcon">
               <div class="icons">
@@ -552,6 +667,7 @@
             </div>
           </div>
         </section>
+
         <section id="demos">
           <div class="demosTitle">
             <h1 class="card-title">Precios flexibles que escalan contigo</h1>
@@ -887,7 +1003,7 @@
           </div>
         </section>
 
-        <section class="cardsDesktop">
+        <section id="demosDesktop" class="cardsDesktop">
           <div class="demosTitle">
             <h1 class="card-title">Precios flexibles que escalan contigo</h1>
             <p class="card-text">
@@ -1179,7 +1295,7 @@
     </main>
 
     <div class="container-fluid">
-      <footer class="py-3">
+      <footer id="foot" class="py-3">
         <div class="d-flex align-items-center justify-content-center">
           <img id="logo" src="assets/img/logo-verde.png" alt="page-logo" />
           <a class="navbar-brand" href="#">Flex</a>
@@ -1219,5 +1335,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
