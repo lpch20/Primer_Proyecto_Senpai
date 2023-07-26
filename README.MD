@@ -2,7 +2,7 @@
 
 
 -  El proyecto se realizara en el idioma Ingles.
--  Utilizaremos el framework Boostrap para el proyecto conjuntamente con flexbox para maquetado y posicionamiento.
+-  Utilizaremos el framework Boostrap y Sweet Alert para el proyecto conjuntamente con flexbox para maquetado y posicionamiento.
 -  Se realizara un CSS para la modificacion del Boostrap y la edicion del estilizado.
 -  Decidimos usar Clases e ID con camellCase.
 -  Se utilizara JavaScript para dar funcionalidad a la pagina. 
